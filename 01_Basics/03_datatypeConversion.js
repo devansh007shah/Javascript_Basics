@@ -56,3 +56,19 @@ console.log(valToBoolean4)
 const val5 = 23
 const valConv = String(val5)
 console.log(valConv,typeof valConv);
+
+
+
+// ********OPERATIONS************
+
+
+let value1 = 43
+const negVal = -value1
+console.log(negVal);
+
+console.log(2+3);
+console.log(2-3);
+console.log(2*3);
+console.log(2**3);
+console.log(2/3);
+console.log(2%3);
