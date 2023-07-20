@@ -38,7 +38,3 @@ console.log(url.includes('shah'));
 const letterOne = "A new string representing str stripped of whitespace from both its beginning and end. Whitespace is defined as white space characters plus line terminators. If neither the beginning or end of str has any whitespace, a new string is still returned (essentially a copy of str)."
 
 console.log(letterOne.split(' ').length);
-
-
-
-
