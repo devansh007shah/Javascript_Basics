@@ -5,7 +5,7 @@ console.log(`Hi myu name is ${name} and my customer base is ${foodCount}`);
 
 // To declare a new string 
 
-const changeName = new String('devanshDeveloper')
+const changeName = new String('devanshDeveloper') // String is called as a contructor
 
 console.log(changeName); // When published in console --- the String is structurally well defined because we have used constructor here 
 
@@ -38,6 +38,7 @@ console.log(url.includes('shah'));
 const letterOne = "A new string representing str stripped of whitespace from both its beginning and end. Whitespace is defined as white space characters plus line terminators. If neither the beginning or end of str has any whitespace, a new string is still returned (essentially a copy of str)."
 
 console.log(letterOne.split(' ').length);
+
 
 
 
