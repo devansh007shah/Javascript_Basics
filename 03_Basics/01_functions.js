@@ -70,3 +70,33 @@ function userNameVal(user1){
 
 console.log(userName('Devansh'));//Dev is Logged in
 console.log(userName());//Please enter your username
+
+//REST Operator
+function calculateCartValue(...item){
+    return item
+}
+
+console.log(calculateCartValue(12,33,24,456,5776)); // Returns an array of the items passed in (...item)
+
+// passing OBJECT in FUNCTION PARAMETER
+
+product = {
+    name : `GPSC - Current-affairs-MCQs - 1000 JULY-2023`,
+    price : 70,
+    // image : 'https://3.bp.blogspot.com/-Vk59sxQxXn0/W9v43Ljk-MI/AAAAAAAAAgI/o-keO5pc2mg9-j4KlNajUTXgKI4go0FoQCLcBGAs/s1600/15000%2BGk.png'
+}
+
+// const imgTemplate = `<div>
+// <img src="${base64Image}" alt="My Image">
+// </div>`
+
+function productDetail(anyobject){
+    return ` ${anyobject.name} is the valued at $ ${anyobject.price}`
+}
+console.log(productDetail(product));
+
+// Another way to manually pass objects in a function
+console.log(productDetail({
+    name:'GPSC Level 1/2',
+    price :323
+}));
