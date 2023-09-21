@@ -18,3 +18,5 @@ accountCity = 'Mumbai';
 */
 
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
+// Use of .table to check indexes and values both
+

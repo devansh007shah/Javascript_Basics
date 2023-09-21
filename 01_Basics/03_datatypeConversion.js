@@ -72,3 +72,10 @@ console.log(2*3);
 console.log(2**3);
 console.log(2/3);
 console.log(2%3);
+
+
+// -----------Flow State is to be maintained ------------- DEtailed in ts39 document
+console.log('1'+2 +2 , typeof('1'+2 +2)) //122 ----- use parenthasis 
+
+console.log(1+2+'2',typeof(1+2+'2')) //32 ---- not approved --- makes code confusing
+
