@@ -100,3 +100,12 @@ console.log(productDetail({
     name:'GPSC Level 1/2',
     price :323
 }));
+
+// Arrays used to pass the values in scope
+
+function newArray([...items]){
+    const minValue = Math.max(...items);
+    return `The lowest value is ${minValue}`;
+}
+
+console.log(newArray([1,32,434,54,232]));

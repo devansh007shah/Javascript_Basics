@@ -1,20 +1,20 @@
-// const val1 = 112;
-// console.log(val1); // Value is printed without datatype
+const val1 = 112;
+console.log(val1); // Value is printed without datatype
 
-// const val2 = new Number(133);
-// console.log(val2); // Value is printed in an object that includes datatype
+const val2 = new Number(133);
+console.log(val2); // Value is printed in an object that includes datatype
 
 // Stringify and than we can convert to number, because of shortage of prototype properties in number
 
-// const val3 = val1.toString()
-// console.log(val3);
+const val3 = val1.toString()
+console.log(val3);
 
 // console.log(val3.concat(val2)); // After stringify --- all properties of string can be applied
 // console.log(val3.split(2));
-// // console.log(val2.toPrecision(5));
+// console.log(val2.toPrecision(7)); // total 7 values should be dispayed on the screen including decimal
 
-// const val5 = 12211221
-// console.log(val5.toLocaleString());
+const val5 = 12211221
+console.log(val5.toLocaleString());
 
 
 // ++++++++++++  MATH  ++++++++++++

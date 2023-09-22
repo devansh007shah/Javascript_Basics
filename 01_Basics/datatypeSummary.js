@@ -1,5 +1,9 @@
 // +++++++++++++++++++++++++++ Memory type in Javascript
 
+// -------Datatypes are Categorized based on two factors : 
+// 1) How values are stored in memory
+// 2) How can I access the data from the memory
+
 //Stack , Heap Memory --- Stack is used in Primitive Memory && Heap Memory is used in Non-primitrive memory
 
 //Stack memory copies your code in its memory 
