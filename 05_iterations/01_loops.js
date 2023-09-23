@@ -96,3 +96,6 @@ const heroes = [
         console.log(`Not a hero of DC or Marvel Comics`);
     }
   }
+
+  // Break And Continue
+  
