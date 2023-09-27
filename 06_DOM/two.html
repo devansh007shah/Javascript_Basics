@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #332123;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent') //Accessing parent Class
+    console.log(parent); 
+    console.log(parent.children[2].innerHTML); // Accessing parent-child -- HTMLCollection Fromat
+
+
+    for (let i = 0; i < parent.children.length; i++) {
+        const element = parent.children[i].innerHTML;
+        console.log(element);
+        
+    } // Using ForLoops to access individual elements at once
+
+
+    parent.children[1].style.color = 'red' // Manipulating individual elements
+    // console.log(parent.firstElementChild); //Accessing first and last elements of the parent element
+    // console.log(parent.lastElementChild); //Accessing first and last elements of the parent element
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne); // Accessing child directly
+
+console.log(dayOne.parentElement); //Accessing parentElement from child
+
+console.log('NODES : ',parent.childNodes); //To access all the childNodes from ahtml project
+</script>
+</html>
