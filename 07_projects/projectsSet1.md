@@ -31,3 +31,61 @@ button.forEach((button)=>{
 ```
 
 ## project 2 
+
+```javascript
+
+const form = document.querySelector('form')
+
+
+
+// console.log(resVal);
+const button = document.querySelector('button')
+
+form.addEventListener('submit', (e) => {
+
+    e.preventDefault()
+
+    const height = parseInt(document.querySelector('#height').value)
+    console.log(height)
+
+    const weight = parseInt(document.querySelector('#weight').value)
+    console.log(weight);
+
+    const result = document.querySelector('#results')
+
+    if (height === '' || height < 0 || isNaN(height)) {
+        result.innerHTML = `Please Enter valid height not ${height}`
+    }
+
+    else if (weight === '' || weight < 0 || isNaN(weight)) {
+        result.innerHTML = `Please Enter valid weight not ${weight}`
+    }
+
+    else {
+        const bmi = ((weight / (height ** 2)) * 10000 ).toFixed(2) // bmi formula
+        console.log(bmi);
+        result.innerHTML = `<span>${bmi}</span>`
+    }
+
+    
+}
+)
+
+```
+
+## project 3 
+
+```javascript 
+
+// const date = new Date()
+
+const clock = document.querySelector('#clock')
+
+// setInterval(function(){},1000) --- syntax for interval 
+
+setInterval(() => {
+    let date = new Date()
+    clock.innerHTML = date.toLocaleTimeString()
+}, 1000);
+
+```
