@@ -21,7 +21,7 @@
 
     function optmizedLanguage(newLangs){
         const li = document.createElement('li')
-        li.appendChild(document.createTextNode(newLangs))
+        li.appendChild(document.createTextNode(newLangs)) //instead of innerHTML -- use createTextNode
         document.querySelector('.language').appendChild(li)
 
     }
@@ -29,7 +29,23 @@
     const langArray = ['python','C++','Java','Ruby']
     for (let i = 0; i < langArray.length; i++) {
         addLanguage(langArray[i])
+        optmizedLanguage(langArray[i])
         
     }
+
+    //Edit -- replace
+    const secLang = document.querySelector('li:nth-child(2)')
+    const newLi = document.createElement('li')
+    newLi.textContent = 'Mojo'
+    secLang.replaceWith(newLi)
+
+//Edit -- outerHTML
+const firstLang = document.querySelector('li:first-child')
+firstLang.outerHTML = '<li>TypeScript</li>'
+
+//edit - remove
+const remElement = document.querySelector('li:last-child')
+remElement.remove()
+
 </script>
 </html>
